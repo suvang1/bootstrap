@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: rgb(132,178,70);
+    background: linear-gradient(107deg, rgba(132,178,70,1) 8%, rgba(78,181,180,1) 21%, rgba(184,89,105,1) 43%, rgba(193,189,113,1) 79%, rgba(210,205,161,1) 98%, rgba(233,227,225,0.8436624649859944) 100%);
+}
+.main
+{
+    margin-left: 20px;
+    width: 300px;
+    height: 700px;
+    background-color:blanchedalmond ;
+    border-radius: 30px;     
+    box-shadow: 5px 20px 50px black;
+    overflow: hidden;
+    top: 25%;
+    left: 25%;
+    position: relative;
+}
+#chk{
+    display:none;
+}
+.signup{
+    position:relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+label{
+    
+    color: black;
+    margin: 10px;
+    display:flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    cursor: pointer;
+}
+input{
+    width: 60%;
+    height: 15px;
+    margin:10px auto;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+}
+button{
+    justify-content: center;
+    width: 90%;
+    margin: 10px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 25px;
+}
+button:hover{
+    background: rgb(31, 82, 148);
+}
+.Login{
+    height:500px;
+    background: azure;
+    border-radius: 60%/10%;
+    transform: translateY(-50px);
+    transition: .8s ease-in-out;
+}
+.Login label{
+    margin: 20px;
+    
+}
+#chk
+{
+    display: none;
+}
+#chk:checked~.login{
+    transform: translate(-200px);
+}
+#chk:checked~.login{
+    transform: scale(1);
+}
+#chk:checked~.signup label{
+    transform: (0.9);
+}
